@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Tilt Warp', cursive;
+}
+
+body
+{
+    overflow: auto;
+    background-color: #f95959;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+.box{
+    margin: 25px;
+    width: 350px;
+    background-color: #f02c2c;
+    border-radius: 25px;
+    overflow: hidden;
+
+}
+
+.box1{
+    margin: 25px;
+    width: 350px;
+    background-color: #455d7a;
+    border-radius: 25px;
+    overflow: hidden;
+
+}
+
+.image{
+    position: relative;
+}
+
+.image img{
+    height: 450px;
+    width: 350px;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.product-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+.product-name{
+    display: flex;
+    flex-direction: column;
+}
+
+.product-name a{
+    color: #fff;
+    margin: 10px 0px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+span{
+    color: rgb(228, 225, 225);
+}
+
+.year{
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 23px;
+}
+
+.Button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.btn{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 25px;
+   height: 50px;
+   width: 150px;
+   background-color: #f02c2c;
+   color: #fff;
+   font-size: 20px;
+   font-weight: bolder;
+}
+.btn1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/tokyoimage.jpg");
+
+    width: 350px;
+    height:450px;
+    background-color: #f02c2c;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bolder;
+ }
+
+ .btn:hover{
+    background-color: #fff;
+    color: #f02c2c;
+    transition: all ease 1s;
+}
+.btn1:hover{
+    background-color: #fff;
+    color: #f02c2c;
+    transition: all ease 1s;
+}
+
+.Button{
+    visibility: hidden;
+}
+
+.image:hover .Button{
+    visibility: visible;
+    animation: animation 0.2s;
+}
+
+@keyframes animation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.container{
+    display: flex;
+    justify-content: left;
+    overflow-x:hidden;
+    
+    height: 600px;
+    max-width: 4000px;
+    margin: 10px auto;
+    transform: translateX(0);
+    transition: all 0.5s ease-in-out;
+}
+
+.arrow{
+    position: absolute;
+    top: 90%;
+    right: 0px;
+    border: 3px solid black;
+    border-radius: 50%;
+    background-image: url(/image.jpg);
+    padding: 35px;
+    font-size: 25px;
+    cursor: pointer;
+    opacity: 0.7;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#nav::before
+{
+    content: "";
+    background-color:#f95959;
+    position:absolute;
+    top:0%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .9;
+    top:0%;
+    left:0%;
+}
+#nav
+{
+    display: flex;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    
+}
+#logo
+{
+    margin:10px 12px;
+    position: absolute;
+    left: 12px;
+    top: 10px;
+}
+#nav img{
+    margin:15px 15px;
+    height: 50px;
+}
+#nav ul{
+    display: flex;
+    
+}
+#nav li{
+    margin: 10px;
+    list-style: none;
+    font-size: 1.5rem;
+    
+}
+
+#nav li a{
+    font-family: 'Tilt Warp', cursive; 
+    text-decoration: none;
+    color:white;
+    font-size: 1.5rem;
+    padding: 10px 10px;
+    display: block;
+    border: 2px solid #455d7a;
+    background-color: #455d7a;
+    border-radius: 35px;
+    cursor:pointer;
+    
+}
+#nav li a:hover{
+    font-family: 'Tilt Warp', cursive; 
+    text-decoration: none;
+    color:white;
+    font-size: 1.5rem;
+    padding: 10px 10px;
+    display: block;
+    border: 5px solid black;
+    background-color: #f95959;
+    border-radius: 35px;
+    cursor:pointer;
+    
+}
+
+.section
+{
+    justify-content: center;
+    align-items: center;
+    background-color:#455d7a;
+    padding: 10vh;
+}
+.con1
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.des
+{
+    display: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.one
+{
+    font-size: 2.5rem;
+    
+    color: #e3e3e3;
+    
+}
+.two
+{
+    font-size: 2.5rem;  
+    margin-left:15px;
+    color:#f95959;
+}
+footer
+{
+    background: grey;
+    color: black;
+    padding: 10px 10px;
+    justify-items: center;
+    align-items: center;
+}
+#contact-box input{
+
+    font-family: 'Tilt Warp', cursive;
+    border-radius: 10px;
+    padding: 2px 3px;
+}
+#contact-box placeholder{
+    font-family: 'Tilt Warp', cursive;
+
+    color: grey;
+    padding: 2px 3px;
+}
+#contact-box 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+#contact-box textarea
+{
+    font-family: 'Tilt Warp', cursive;
+    width:100%;
+    padding: 0.5rem;
+    border-radius: 20px;
+    font-size: 1.2rem;
+}
+#contact-box form
+{
+    align-items: center;
+    justify-content: center;
+    width:40%;
+}
+#contact-box label
+{
+    font-family: 'Tilt Warp', cursive; 
+    font-size: 1.3rem;
+}
+#contact
+{
+    position: relative;
+}
+#contact::before
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.2;
+    background: url(/manga.jpg);
+}
+.h-primary
+{
+    font-family: 'Tilt Warp', cursive; 
+    font-size: 3.6rem;
+    padding: 8px;
+    text-align: center;
+}
+.center
+{
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+.gallery
+{
+    width:900px;
+    display:flex;
+    overflow-x: scroll;
+}
+.gallery div{
+    width:100%;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-gap:20px;
+    padding:10px;
+    flex: none;
+}
+.gallery div img
+{
+    width: 100%;
+}
+.gallery ::-webkit-scrollbar
+{
+    display: none;
+}
